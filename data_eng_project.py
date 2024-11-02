@@ -3,7 +3,7 @@ from datetime import datetime
 import sqlite3
 
 
-API_KEY = "a76e5cae92c52effbbfcb98d8001a37b"
+API_KEY = "a76e5cae92c52effbbfcb98d8001****" #I hide my key on purpose. To get your own key go on Openweathermap and create an account then find your key here : https://home.openweathermap.org/api_keys
 CITY = "Melbourne"
 DB_PATH = "./weather_data.db"
 

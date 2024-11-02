@@ -4,7 +4,7 @@ import sqlite3
 
 DB_PATH = "./weather_data.db"
 
-def display_db(db_path=DB_PATH):
+def display_db(query, db_path=DB_PATH):
 
     # Connect to the database
     conn = sqlite3.connect(db_path)
@@ -26,4 +26,5 @@ def display_db(db_path=DB_PATH):
 query =  """
         SELECT * FROM weather
     """
-display_db()
+
+display_db(query=query)

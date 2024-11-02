@@ -10,4 +10,3 @@ Finally, the third task, `termination.py`, outputs a message confirming the succ
 
 By structuring these tasks in sequence, I learnt how to manage and organize workflows in Airflow, 
 specifically focusing on task dependencies and controlled execution order.
-'''

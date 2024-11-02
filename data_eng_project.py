@@ -89,30 +89,5 @@ def store_data_in_db(transformed_data, db_path=DB_PATH):
 #     ''')
 
 
-def display_db(db_path=DB_PATH):
-
-    # Connect to the database
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
-
-    # Fetch the latest entries in the `weather` table
-    cursor.execute(
-        """
-        SELECT * FROM weather
-    """
-    )
-
-    # Retrieve and print the results
-    rows = cursor.fetchall()
-    for row in rows:
-        print(row)
-
-    # Close the cursor and connection
-    cursor.close()
-    conn.close()
-
-
-#if __name__ == "__main__":
 
 get_store_weather_data()
-display_db()
